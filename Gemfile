@@ -21,6 +21,9 @@ gem 'twitter'
 gem 'pry'
 gem 'pry-nav'
 
+gem 'sidekiq'
+gem 'redis'
+
 group :test do
   gem 'faker'
   gem 'rspec'

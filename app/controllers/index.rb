@@ -44,6 +44,11 @@ post '/' do
   # binding.pry
   # @token = @user.oauth_token
   # @secret = @user.oauth_secret
-  @tweet = @client.update(params[:tweet])
-  @tweet.to_json
+  @tweet = @user.tweet(params[:tweet])
+  @tweet.to_json   # moved to tweet_worker
+end
+
+get '/status/:job_id' do
+  # return the status of a job to an AJAX call
+
 end
